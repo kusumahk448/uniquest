@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(231, 210, 140);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group input.valid {
+    border-color: green;
+}
+.form-group input.invalid {
+    border-color: red;
+}
+.form-group .feedback {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: red;
+}
+.form-group .feedback.valid {
+    color: green;
+}
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #ccc;
+}
