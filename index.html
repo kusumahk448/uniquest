@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href='styles.css'>
+   <link rel="stylesheet" href="bot.css">
  </head>
  <body>
   <div class="header">
@@ -150,5 +151,43 @@
     </div>
 </footer>
   <script src="build/script.js"></script>
+   <div id="chatbot-container">
+        <div id="chatbot-header">
+            <span>Chat with us!</span>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div id="webchat" role="main"></div>
+    </div>
+
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script>
+        // Function to load the chatbot after 4 seconds
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("chatbot-container").style.display = "block";
+            }, 4000);  // 4000 ms = 4 seconds
+        };
+
+        // Replace 'YOUR_SECRET_KEY' with the actual Direct Line Secret Key from Azure
+        const directLineSecret = 'X-4h7-qj3xI.WF5PRaVSJ1vWkzVUAqSjan_qLOrRRGpTG0uFEtDVdbY';
+
+        // Render the webchat
+        window.WebChat.renderWebChat({
+            directLine: window.WebChat.createDirectLine({
+                secret: directLineSecret  // Use your bot's secret key here
+            }),
+            styleOptions: {
+                botAvatarInitials: 'Bot',
+                userAvatarInitials: 'Me',
+                backgroundColor: '#ffffff'
+            }
+        }, document.getElementById('webchat'));
+
+        // Close button functionality
+        document.getElementById('close-chatbot').addEventListener('click', () => {
+            document.getElementById('chatbot-container').style.display = 'none';
+        });
+    </script>
+</body>
  </body>
 </html>
