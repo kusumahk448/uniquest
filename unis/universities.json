@@ -1,0 +1,140 @@
+{
+    "universities": [
+      {
+        "name": "Indian Institute of Technology Bombay",
+        "location": "Mumbai, Maharashtra",
+        "ranking": 1,
+        "courses": ["BE", "BCA", "BSc"],
+        "fees": 200000,
+        "logo": "pics/iitb.png",
+        "website": "https://www.iitb.ac.in"
+      },
+      {
+        "name": "Indian Institute of Science",
+        "location": "Bangalore, Karnataka",
+        "ranking": 2,
+        "courses": ["BE", "BTech", "BSc"],
+        "fees": 250000,
+        "logo": "pics/iisc.png",
+        "website": "https://www.iisc.ac.in"
+      },
+      {
+        "name": "Jawaharlal Nehru University",
+        "location": "New Delhi, Delhi",
+        "ranking": 3,
+        "courses": ["BBA", "BA"],
+        "fees": 300000,
+        "logo": "pics/jnu.png",
+        "website": "https://www.jnu.ac.in"
+      },
+      {
+        "name": "University of Delhi",
+        "location": "New Delhi, Delhi",
+        "ranking": 4,
+        "courses": ["BCom", "BA (Econ)", "MCom"],
+        "fees": 200000,
+        "logo": "pics/du.jpeg",
+        "website": "http://www.du.ac.in"
+      },
+      {
+        "name": "Indian Institute of Technology Madras",
+        "location": "Chennai, Tamil Nadu",
+        "ranking": 5,
+        "courses": ["BE", "BA", "BCA","MCA"],
+        "fees": 180000,
+        "logo": "pics/iitm.png",
+        "website": "https://www.iitm.ac.in"
+      },
+      {
+        "name": "Banaras Hindu University",
+        "location": "Varanasi, Uttar Pradesh",
+        "ranking": 6,
+        "courses": ["MA", "MBA", "MBBS"],
+        "fees": 230000,
+        "logo": "pics/bhu.jpeg",
+        "website": "https://www.bhu.ac.in"
+      },
+      {
+        "name": "University of Hyderabad",
+        "location": "Hyderabad, Telangana",
+        "ranking": 7,
+        "courses": ["MTech", "BA", "MA","BTech"],
+        "fees": 260000,
+        "logo": "pics/uh.png",
+        "website": "https://www.uohyd.ac.in"
+      },
+      {
+        "name": "Indian Institute of Technology Kharagpur",
+        "location": "Kharagpur, West Bengal",
+        "ranking": 8,
+        "courses": ["BE", "MCA", "MBA"],
+        "fees": 300000,
+        "logo": "pics/iitkh.png",
+        "website": "https://www.iitkgp.ac.in"
+      },
+      {
+        "name": "Jadavpur University",
+        "location": "Kolkata, West Bengal",
+        "ranking": 9,
+        "courses": ["BE", "MPharm", "MSc"],
+        "fees": 250000,
+        "logo": "pics/jadav.png",
+        "website": "http://www.jaduniv.edu.in"
+      },
+      {
+        "name": "Amrita Vishwa Vidyapeetham",
+        "location": "Coimbatore, Tamil Nadu",
+        "ranking": 10,
+        "courses": ["BE", "BA", "MA"],
+        "fees": 150000,
+        "logo": "pics/avv.png",
+        "website": "https://www.amrita.edu"
+      },
+      {
+        "name": "Indian Institute of Technology Roorkee",
+        "location": "Roorkee, Uttarakhand",
+        "ranking": 11,
+        "courses": ["MBA", "BBA", "MTech"],
+        "fees": 210000,
+        "logo": "pics/iitr.jpeg",
+        "website": "https://www.iitr.ac.in"
+      },
+      {
+        "name": "Birla Institute of Technology and Science",
+        "location": "Pilani, Rajasthan",
+        "ranking": 12,
+        "courses": ["MSc", "MPharm", "BSc"],
+        "fees": 180000,
+        "logo": "pics/bitsp.png",
+        "website": "https://www.bits-pilani.ac.in"
+      },
+      {
+        "name": "National Institute of Technology Tiruchirappalli",
+        "location": "Tiruchirappalli, Tamil Nadu",
+        "ranking": 13,
+        "courses": ["BE", "BA (Econ)", "MCA"],
+        "fees": 190000,
+        "logo": "pics/nitt.png",
+        "website": "https://www.nitt.edu"
+      },
+      {
+        "name": "Indian Institute of Technology Guwahati",
+        "location": "Guwahati, Assam",
+        "ranking": 14,
+        "courses": ["MPharm", "MArch", "BArch"],
+        "fees": 220000,
+        "logo": "pics/iitg.png",
+        "website": "https://www.iitg.ac.in"
+      },
+      {
+        "name": "Vellore Institute of Technology",
+        "location": "Vellore, Tamil Nadu",
+        "ranking": 15,
+        "courses": ["MBBS", "MBA", "BBA LLB"],
+        "fees": 240000,
+        "logo": "pics/vit.png",
+        "website": "https://www.vit.ac.in"
+      }
+    ]
+  }
+  
