@@ -39,8 +39,27 @@
    </div>
   </div>
   <div class="nav">
-   <a href="./allcourses.html" class="nav-link">All Courses &#9662</a>
-   <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
+    <div class="sidebar-toggle">
+        <a>All Courses <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div class="sidebar">
+        <h2>All Courses</h2>
+        <ul class="course-list">
+          <li>B.Tech <i class="fas fa-chevron-right"></i></li>
+          <li>MBA <i class="fas fa-chevron-right"></i></li>
+          <li>M.Tech <i class="fas fa-chevron-right"></i></li>
+          <li>MBBS <i class="fas fa-chevron-right"></i></li>
+          <li>B.Com <i class="fas fa-chevron-right"></i></li>
+          <li>B.Sc <i class="fas fa-chevron-right"></i></li>
+          <li>BA <i class="fas fa-chevron-right"></i></li>
+          <li>BBA <i class="fas fa-chevron-right"></i></li>
+          <li>BCA <i class="fas fa-chevron-right"></i></li>
+          <li>B.Arch <i class="fas fa-chevron-right"></i></li>
+          <li>B.Ed <i class="fas fa-chevron-right"></i></li>
+        </ul>
+      </div>
+   
+   <a href="./index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
    <a href="#" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
    <a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contact Us</a>
    <a href="#" class="nav-link"><i class="fas fa-university"></i> Universities</a>
@@ -187,6 +206,13 @@
         document.getElementById('close-chatbot').addEventListener('click', () => {
             document.getElementById('chatbot-container').style.display = 'none';
         });
+
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+const sidebar = document.querySelector('.sidebar');
+
+sidebarToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+});
     </script>
 </body>
  </body>

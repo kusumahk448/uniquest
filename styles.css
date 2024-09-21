@@ -295,3 +295,63 @@ a:hover {
     border-radius: 10px;
     z-index: -1;
   }
+  .sidebar-toggle {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    z-index: 1001; /* increased z-index to 1001 */
+    /* background-color: #c6c5c5; */
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar-toggle i {
+    font-size: 12px;
+    margin-left: 5px ;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 80px);
+    background-color: #f8f8f8;
+    padding: 0px;
+    border-right: 1px solid #ddd;
+    transform: translateX(-300px);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001; /* increased z-index to 1001 */
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* add this to make the video behind the sidebar */
+  .hero video {
+    z-index: 0; /* set z-index to 0 to make it behind the sidebar */
+  }
+  .course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .course-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .course-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .course-list li i {
+    font-size: 12px;
+  }
