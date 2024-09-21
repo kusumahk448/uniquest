@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h2>Registration Form</h2>
+    <div class="header">
+        <div class="logo">
+         <img alt="Logo" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-mlsngFQvlDXbw9v96jZ2zG7i.png?st=2024-09-21T09%3A36%3A26Z&amp;se=2024-09-21T11%3A36%3A26Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-20T23%3A28%3A18Z&amp;ske=2024-09-21T23%3A28%3A18Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=IzUk/gMGPE63uul1GFJPQHOypax0kWEnnpn02AB%2BjXg%3D" width="40"/>
+         <span>
+          Uniquest
+         </span>
+        </div>
+        <div class="search-bar">
+         <input placeholder="Search for Colleges, Exams, Courses and More.." type="text"/>
+         <i class="fas fa-search">
+         </i>
+        </div>
+        <div class="actions">
+         <a href="#">
+          <i class="fas fa-pen">
+          </i>
+          Write a Review
+         </a>
+         <a href="#">
+          <i class="fas fa-bell">
+          </i>
+         </a>
+         <a href="#">
+          <i class="fas fa-bars">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="nav">
+        <a href="./allcourses.html">
+         All Courses
+        </a>
+       </div>
+
+    <div class="parallax-container">
+        <div class="parallax-background">
+            <img src="university.jpg" alt="Parallax Image">
+        </div>
+        <div class="form-container">
+            <h2 style="text-align: center;">Registration Form</h2>
     <form id="registrationForm" action="/post" method="post">
         <div class="form-group">
             <label for="name">Name:</label>
@@ -36,6 +77,8 @@
         </div>
         <button type="submit" id="submitBtn">Submit</button>
     </form>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
