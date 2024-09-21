@@ -63,11 +63,23 @@ body {
     font-size: 14px;
 }
 .nav {
-    background-color: #333;
+    background-color: #424141;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end ;
+    flex-direction: row;
+    margin-left:auto;
 }
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+  
 .nav a {
     color: white;
     text-decoration: none;
@@ -163,18 +175,23 @@ body {
 }
 .study-goals .goal {
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1.5px solid #000;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 200px;
     margin: 10px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 .study-goals .goal img {
-    height: 50px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 10px;
+    border-radius: 30%;
 }
 .study-goals .goal h3 {
+    font-weight: 700;
     font-size: 18px;
     margin: 10px 0;
 }
@@ -182,29 +199,99 @@ body {
     font-size: 14px;
     color: #666;
 }
+
 .typing-text {
-  font-size: 36px;
-  font-weight: bold;
-  color: #f9f9f9;
-}
+    font-size: 36px;
+    font-weight: bold;
+    color: #f9f9f9;
+    overflow: hidden; /* Add this */
+    white-space: nowrap; /* Add this */
+    border-right: 2px solid #333; /* Add this */
+    animation: typing 3s infinite; /* Update the animation name and duration */
+  }
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 
 .typing-text::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 100%;
+  width: 1px;
+  height: 8%;
   background-color: #333;
   animation: typing-cursor 1s infinite;
 }
-
-@keyframes typing-cursor {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0; /* Reduced padding */
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+a:hover {
+    background-color: #f2c4a5; /* orange color */
+    border-radius: 5px; /* rounded corners */
+    padding: 5px 10px; /* add some padding to create a rectangular box */
+    opacity: 0.8; /* add some opacity to the background color */
+    transition: background-color 0.2s ease-in-out; /* smooth transition effect */
+  }
+  .logo img {
+    width: 60px; /* Increase the width to 80px */
+    margin-right: 10px;
+    height: 80px;
+  }
+  .header .logo span {
+    color: #f2c4a5; /* Change the text color to #f2c4a5 */
+    font-size: 24px;
+    font-weight: 700;
+  }
+.goal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .goal:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: -1;
+  }

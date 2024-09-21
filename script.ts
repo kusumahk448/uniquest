@@ -1,7 +1,7 @@
 // script.ts
 const typingTextElement = document.querySelector('.typing-text');
 
-const textToType = 'Find Over 250+ in India';
+const textToType = 'Unlock Your Future, Explore Endless Possibilities';
 let currentIndex = 0;
 
 function typeText() {
