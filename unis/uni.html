@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Finder</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="uni.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+         <img alt="Logo" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-mlsngFQvlDXbw9v96jZ2zG7i.png?st=2024-09-21T09%3A36%3A26Z&amp;se=2024-09-21T11%3A36%3A26Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-20T23%3A28%3A18Z&amp;ske=2024-09-21T23%3A28%3A18Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=IzUk/gMGPE63uul1GFJPQHOypax0kWEnnpn02AB%2BjXg%3D" width="40"/>
+         <span>
+          Uniquest
+         </span>
+        </div>
+        <div class="search-bar">
+         <input placeholder="Search for Colleges, Exams, Courses and More.." type="text"/>
+         <i class="fas fa-search">
+         </i>
+        </div>
+        <div class="actions">
+         <a href="#">
+          <i class="fas fa-pen">
+          </i>
+          Write a Review
+         </a>
+         <a href="#">
+          <i class="fas fa-bell">
+          </i>
+         </a>
+         <a href="#">
+          <i class="fas fa-bars">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="nav">
+        <a href="./allcourses.html">
+         All Courses
+        </a>
+       </div>
+       <h1 style="text-align: center;">Find your College</h1>
+
+       <div class="filters">
+           <label for="locationFilter">Location:</label>
+           <input type="text" id="locationFilter" placeholder="Enter location">
+   
+           <label for="courseFilter">Course:</label>
+           <input type="text" id="courseFilter" placeholder="Enter course">
+   
+           <label for="feesFilter">Max Fees:</label>
+           <input type="number" id="feesFilter" placeholder="Enter max fees">
+           
+           <button id="filterBtn">Filter</button>
+       </div>
+   
+       <div id="university-list"></div>
+   
+       <div class="pagination">
+           <button id="prevPage">Previous</button>
+           <span id="pageInfo"></span>
+           <button id="nextPage">Next</button>
+       </div>
+
+    <script src="uni.js"></script>
+
+</body>
+</html>
